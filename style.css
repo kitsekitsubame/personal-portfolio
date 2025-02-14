@@ -32,7 +32,7 @@
 /* main section */
 
 .main {
-    background: url(./main\ copy.jpg)no-repeat;
+    background: url(img/02.jpg)no-repeat;
     background-size: cover;
     width: 100%;
     height: 95vh;
@@ -82,4 +82,261 @@
     background-color: rgb(233, 20, 109);
     transition: 0.5s;
     color: white;
+}
+
+.about img {
+    size: 80%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+.progress {
+    background-color: whitesmoke;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+}
+
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value2 {
+    animation: load2 4s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3 {
+    animation: load3 5s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value4 {
+    animation: load4 6s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.progress p {
+    color: white;
+    padding: 0 12px;
+    line-height: 25px;
+}
+
+/* progress bar animation */
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 98%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+.btn1 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.btn2 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.card {
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    height: 100% 
+}
+
+.card p {
+    color: gray;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.circle:hover {
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+}
+
+.card:hover .circle {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* portfolio */
+
+.control ul li {
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.item {
+    position: relative;
+}
+
+.item span {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item:hover span {
+    opacity: 1;
+    transition: 2s;
+}
+
+.square-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 0;
+    
+  }
+
+.square-img:hover {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transition: 1s;
+}
+
+  .col-lg-4 {
+    margin-bottom: 30px;
+  }
+
+  .modal-dialog {
+    max-width: 50%;
+}
+
+.contact .btn3 {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: rgb(48, 48, 48);
+    color: whitesmoke;
 }
